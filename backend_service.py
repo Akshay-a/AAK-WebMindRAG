@@ -84,13 +84,7 @@ def add_document(self, page_id: str) -> dict:
     Add a Confluence page to the RAG database
     Returns stats about the operation
     """
-    # Get page content from Confluence
-    #page = self.confluence.get_page_by_id(page_id, expand='body.storage')
-    #if not page:
-    #    return {"status": "error", "message": f"Page with ID {page_id} not found."}
     
-    #page_title = page['title'].replace('/','&').replace(' ','_')
-    #html_content = page['body']['storage']['value']
     with open("C:/Project/BedRock/sampleTableHtml.html", "r", encoding="utf-8") as f:
         html_content = f.read()
     # Process the HTML content
@@ -116,7 +110,7 @@ def add_document(self, page_id: str) -> dict:
         "chunks_added": len(chunks),
         "index_stats": stats
     }
-# #Change: Updated to use the existing RAG store instance rather than creating a new one
+# Updated to use the existing RAG store instance rather than creating a new one
 def process_page_and_children(self, page_id: str):
 
     # Use the existing RAG store instead of creating a new one
