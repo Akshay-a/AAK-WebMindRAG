@@ -1,5 +1,5 @@
 # AAK-WebMindRAG
-WebMind 🧠 – Smart HTML Chunking for RAG Built in an internal hackathon for Confluence page processing, WebMind now handles any HTML, parsing multiple pages at once while preserving structure. It creates adaptive chunks, updates Faiss DB in batches, and offers an interactive Streamlit UI for exploration. 🚀
+WebMind 🧠 – Smart HTML Chunking for RAG Built for Confluence page processing, WebMind handles Confluence pages, parsing multiple pages at once while preserving structure. It creates adaptive chunks, updates Faiss DB in batches, and offers an interactive Streamlit UI for exploration. 🚀
 
 TO Run this APP :
 1- You need to generate a API key from Your Confluence Account and pass it in the backed_service class. 
